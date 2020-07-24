@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-us">
    <head>
       <title>The Azubi RESTAURANT</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
    </head>
    <body>
       <h1><u>THE AZUBI RESTAURANT</u></h1>
       <h2>About The Restaurant</h2>
-      <p>The Azubi Restaurant is a German-based restaurant which provides it's customers with both local and continental dishes. It's heardquarters is in  Bielefeld in Germany.</p>
+      <p>The Azubi Restaurant is a German-based restaurant which provides it's customers with both <br>local and continental dishes. It's heardquarters is in  Bielefeld in Germany.</p>
       
       <p>The image below is an interior view of the restaurant with a caption.</p>
       <figure>
@@ -41,46 +43,28 @@
       </ul>
         
       <h2>Contact Us</h2>
-      
       <p>Please feel free to send us your feedback, recommendations or concerns by filling-in the form below</p>
-      
       <form>
-          <label for="name">
-              Name
-          </label> 
-          <input name="name"
-                 type="text"
-                 placeholder="Enter your name here"></input>
-          </label>
-          <br>
-          <label for="email">
-              Email
-          </label> 
-          <input name="email"
-                 type="text"
-                 placeholder="Enter your email here"></input>
-          </label>
-      </form>
-      
-          <label>Gender:</label>
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here..."> <br>
 
-      <br>
-      <form>
-          <label for="Message">Message</label> <br>
-          <textarea id="message" 
-                    name="message" 
-                    cols="20" 
-                    rows="5"
-                    placeholder="Type your message here"></textarea>
-                    <br>
-          <button type="Submit">Submit</button>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email here..."> <br>
+
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Female</label>
+        <input type="radio" name="gender" id="female" value="female"><br>
+
+        <label for="text">Message</label><br>
+        <textarea rows="5" cols="25" name="message" id="message" placeholder="type your messages here"></textarea><br>
+        <button  type="submit" name="submit">Submit</button>
       </form>
 
       <h2>Give us a rating (0 to 5)</h2>
-          
-          
+      <input type="range" name="range" id="range" min="0" max="5">
+                    
       <h2>A Message From The C.E.O</h2>
        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:</p>
        <blockquote>
