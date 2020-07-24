@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en-US">
     <head>
+        <meta charset = "UTF=8">
+        <meta name = "description" content =  "A ebsite for Hues Restaurant">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">  
-        <tile></tile>
+        <tile>Asiignment 1</tile>
     </head>
+
     <body>
         <main>
             <header name = "Hues Restaurant"></header>
-        <h1><u>Hues Restaurant</u></h1>
+        <h1><u>HUES RESTAURANT</u></h1>
 
         <h2>About The Restaurant</h2>
 
-        <p>Hues Restaurant is a Ghanaian-based restaurant which provides it's customers with both local and
-          continental dishes. It's headquaters is in Osu in Ghana.
+        <p>Hues Restaurant is a Ghanaian-based restaurant which provides it's customers with both<br>
+            local and continental dishes. It's headquaters is in Osu in Ghana.
         <br>
         <br>
           The image below is an interior view of the restaurant with a caption
         <br>
         <br>
+        <figure>
          <img src = "/priscillaodame_restaurant.jpg " alt="Image of the restaurant" width="275" height = "183" 
          srcset="/priscillaodame_restaurant.jpg 2x" srcset="/priscillaodame_restaurant.jpg 3x">
         <figcaption>Hues Restaurant - Osu</figcaption>
+        </figure>
         </p>
 
-        <h2>Branches Worldwide</h2>
+        <h2>Branches Nationwide</h2>
         <p>You will find all the various branches grouped under the Regions
         <br>
         <dl>
@@ -41,7 +46,7 @@
         </p>
 
         <h2>Menus Available</h2>
-        <p>The azubi Restaurant provides both <em>local</em> and <em>continental dishes.</em> Some of which include:
+        <p>Hues Restaurant provides both <em>local</em> and <em>continental dishes.</em> Some of which include:
         <br>
         <ul>
            <li>Jollof with Chicken &amp; Sausage</li>
@@ -54,12 +59,13 @@
         </p>
 
         <h2>Contact Us</h2>
-        <p>Please, feel free to send us your feedback, recommendations or concerns by filling-in the form below
-            <form>
+        <p>Please, feel free to send us your feedback, recommendations or concerns by filling-in the<br>
+            form below
+            <form action = "" method= "GET">
                 <label>Name</label>
-                <input placeholder="Enter your name here..."><br>
+                <input placeholder="Enter your name here..." id = "name" type = "text" name="name"><br>
                 <label>Email</label>
-                <input placeholder = "Enter your email here..."><br>
+                <input placeholder = "Enter your email here..."  id = "email" type = "email" name="email"><br>
                 <label>Gender</label>
                 <input id = "genderradio" name = "radiobutton" type = "radio" value="Male">
                 <label for = "genderradio">Male</label>
@@ -77,18 +83,26 @@
         </p>
 
         <h2>Give us a rating (0 to 5)</h2>
+        <div>
+        <input type = "range" min = "0" max = "5" value = "3">
+        </div>
 
         <h2>A Message From The C.E.O</h2>
-        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:
+        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This <br>
+            is what he said:
         <br>
-        <blockquote>"There is no food difficult for you to eat. It is just a matter of psyching yourself.<br>
-        Free your mind and the food will settle in your belly because the sweetness is the pudding is in the eating."
+        <blockquote>
+            <q>There is no food difficult for you to eat. It is just a matter of psyching yourself.<br>
+                Free your mind and the food will settle in your belly because the sweetness of <br>
+                the pudding is in the eating.
+            </q>
         <br>    
         <br>
            <cite>-Honourable Nana Yaw Oduro</cite>
         </blockquote>
         </p>
         </main>
+        <hr>
         <footer>
             &copy; Hues Restaurant - 2020. Website: <a href="https://github.com/odurusphp/testingazubigit">https://github.com/odurusphp/testingazubigit</a>
         </footer>
