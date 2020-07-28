@@ -12,11 +12,13 @@
     <body>
         <h1><u>THE AZUBI RESTAURANT</u></h1>
         <h2>About The Restaurant</h2>
-        <p>Azubi Restaurant is a German-based restaurant which provides its customers with both local and continental dishes. Its headquarters is in Bielefeld in Germany.</p>
+        <p>Azubi Restaurant is a German-based restaurant which provides its customers with both local and continental
+            dishes. Its headquarters is in Bielefeld in Germany.</p>
 
         <p>The image below is an interior view of the restaurant with a caption.</p>
         <figure>
-            <img src="leslie_restaurant.jpg" alt="leslie_restaurant" width="480" height="270" srcset="leslie_restaurant.jpg 2x" aria-label="azubi restaurant picture" aria-hidden="true"/>
+            <img src="leslie_restaurant.jpg" alt="leslie_restaurant" width="480" height="270"
+                srcset="leslie_restaurant.jpg 2x" aria-label="azubi restaurant picture" aria-hidden="true" />
             <figcaption>
                 The Azubi Restaurant - Bielefeld
             </figcaption>
@@ -40,7 +42,7 @@
 
         <!-- Restaurant Menus -->
         <h2>Menus Available</h2>
-        <p>The Azubi Restaurant provides both <i>local</i> and <i>continental</i> dishes. Some of which include:</p>
+        <p>The Azubi Restaurant provides both <em>local</em> and <em>continental</em> dishes. Some of which include:</p>
         <ul>
             <li>Jollof with Chicken & Sauage</li>
             <li>Apapransa</li>
@@ -52,18 +54,26 @@
         <h2>Contact Us</h2>
         <p>Please, feel free to send us your feedback, recommendations or concerns by filling in the form below</p>
         <form action="/feedback.php" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name here..."><br />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email here..."><br />
-            <label for="gender">Gender</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <label for="message">Message</label><br />
-            <textarea rows="5" cols="25" name="message" id="message"
-                placeholder="Type your message here"></textarea><br />
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name here...">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here...">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <label for="message">Message</label><br/>
+                <textarea rows="5" cols="25" name="message" id="message" placeholder="Type your message here">
+                </textarea>
+            </div>
             <button type="submit" name="submit">Submit</button>
             <h2>Give us a rating (0 to 5)</h2>
             <input type="range" name="rating" id="rating" min="0" max="5">
@@ -71,9 +81,11 @@
 
         <!-- CEO Message Quote -->
         <h2>A Message From The C.E.O</h2>
-        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:</p>
+        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:
+        </p>
         <blockquote>
-            "There is no food difficult for you to eat. It is just a matter of psyching yourself. Free your mind and the food will settle in your belly because the sweetness of the pudding is in the eating." <br /><br />
+            <p>"There is no food difficult for you to eat. It is just a matter of psyching yourself. Free your mind and the food will settle in your belly because the sweetness of the pudding is in the eating."
+            </p>
             <cite> - Honourable Nana Yaw Oduro</cite>
         </blockquote>
         <hr />
