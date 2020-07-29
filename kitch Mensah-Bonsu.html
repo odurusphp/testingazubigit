@@ -13,6 +13,10 @@
     <p>
         The image below is an interior view of the restaurant with a caption.
     </p>
+        <!--USE OF A RELATIVE PATH WILL BE BETTER FOR THE SOURCE FILE. THIS ENSURES THAT WHEN WORKING WITH
+        A TEAM IT IS STILL POSSIBLE FOR ALL TEAM MEMBERS TO SEE THE FILE. WHAT HAPPENS HERE IS THAT YOU REFERENCED
+        YOUR USERS FOLDER AND DESKTOP BUT FOR MY END I USE A LINUX SYSTEM SO THE FILE PATH WILL BE SKEWED.-->
+        <!--ALSO DO WELL TO ADD THE UNIT OF MEASUREMENT FOR ALL MEASUREMENTS IN THIS CASE THE WIDTH AND HEIGHT-->
     <figure>
         <img src="C:\Users\mensa\Desktop\testingazubigit\Kitch_restaurant.jpg" width="480" height="270" />
         <figcaption>
@@ -49,7 +53,7 @@
     <h2>Contact Us</h2>
 
     <p>Please, feel free to send us your feedback, recommendations or concerns by filling-in the form below</p>
-
+    <!--GOOD JOB WITH THE ATTRIBUTE 'for' WITHIN THE LABELS-->
     <form action="/feedback.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Enter your name here..."><br />
