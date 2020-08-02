@@ -1,38 +1,26 @@
+document.addEventListener('DOMcontentloaded',() => {
 
-	
-			var col = 10;
-			var row = 10;
-			var dCheck = true;
-			function createButtons(row,col){
-				var counter = 1;
-				var element = document.getElementById("buttonArea");
+    const grid =document.querySelector('.grid')
+    let width =10
+    let bombsAmount = 20
+    let squares=[]
 
-					for(countR = 1; countR <= row; countR++){
+    function createGame(){
+        for(let i=0;  i< width*2; i++) {
+            const bombsArray =Array(bombsAmount).fil('bomb')
+             const emptyArray = Array (width*2-bombsAmount).fill(failed)
+ console.log(bombsArray);
+ console.log(emptyArray)
+const gameArray = emptyArray.concat(bombsArray)
+ console.console.log(gameArray);
 
-						for(countC = 1; countC <= col; countC++){
-							var newButton = document.createElement("button");
-							newButton.setAttribute("id", "btn" + counter);
-							newButton.setAttribute("type", "button");
+            const square = document.createElement(div)
+            square.setAttribute(id, i)
+grid.appendChild(square)
+squares.push()
 
-							newButton.setAttribute("class", "noclass");
-							element.appendChild(newButton);
-							counter++;
-						}
-						var breakLine = document.createElement("br");
-						element.appendChild(breakLine);
-					}
-
-			}
-			
-			
-	
-			
-			function resetButtons(){
-				var buttons = document.getElementsByTagName("button");
-				for(var i = 0; i < (buttons.length); i++){
-					buttons[i].innerHTML = "";
-					buttons[i].disabled = false;
-					buttons[i].setAttribute("class", "noclass");
-				}
-
-			}
+        }
+    }
+    
+createGame()
+})
