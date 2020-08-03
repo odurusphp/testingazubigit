@@ -1,0 +1,107 @@
+/*body background styling
+photo credits GEORGE DESIPRIS from pexels.com
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*header*/
+.header {
+	background-color: SlateBlue;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.header h1 {
+	font-size: 25px;
+}
+
+/* Left column */
+.leftcolumn {   
+	float: left;
+	width: 75%;
+	border-radius: 5px;
+}
+
+/* Right column */
+.rightcolumn {
+	float: left;
+	width: 25%;
+	
+
+}
+
+
+/*content styling*/
+.content {
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+
+.content.foodmenu ul{
+	list-style-type: none;
+	margin: -5;
+
+}
+.content.foodmenu li{
+	float: left;
+	padding:2px;
+	margin-bottom: 7px;
+	background-color: #116466;
+	color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.content.foodmenu li:hover{
+	background-color: indigo;
+	color: white;
+	
+}
+.content.branches dd{
+	list-style-type: none;
+	margin: 0;
+
+}
+.content.branches dt{
+	float: left;
+	padding:8px;
+	margin-bottom: 7px;
+	background-color: #116466;
+	color: #ffffff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer section*/
+.footer {
+	background: DarkSeaGreen;
+	color: white;
+	padding: 2px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+img{
+	
+	border: white;
+	border-radius:10px;
+}
