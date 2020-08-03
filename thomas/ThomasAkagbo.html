@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Azubi Africa Restuarant</title>
+
 </head>
 <header>
-    <h1>
+    <h1 style="background-image: url(header.jpg);">
         <u>THE AZUBI AFRICA RESTUARANT</u>
     </h1>
 </header>
@@ -18,40 +21,45 @@ local and continental dishes. It's headquarters is in Bielefeld in Germany.</p>
 <p>The image below is an interior view of the restaurant with a caption.</p>
 <br>
 <figure>
-	<img src="thomas_restaurant.png" alt="Azubi Restuarant" width="800" height="500">
+	<img src="thomas_restaurant.png" alt="Azubi Restuarant" class="image">
 	<figcaption> The Azubi Restaurant - Bielefeld </figcaption>
 </figure>
 
 <h3>Branches Worldwide</h3>
 <p>You will find all the various branches grouped under the countries</p>
 
-<ul type="none">
-	<li>Ghana
+<ul type="none" class="list">
+	<div class="ghana"><li>Ghana
 	<ul type="none">
       <li>Adenta - Accra</li>
       <li>Tishegu - Tamale</li>
       <li>Santasi - Kumasi</li>
     </ul>
 	</li>
+  </div>
 
+  <div class="ethiopia">
 	<li>Ethiopia
 	<ul type="none">
       <li>Sodo</li>
       <li>Harar</li>
     </ul>
 	</li>
+  </div>
 
+  <div class="afghan">
 	<li>Afghanistan
 	<ul type="none">
       <li>Herat</li>
       <li>Khost</li>
     </ul>
 	</li>
+  </div>
 </ul>
 
 <h3>Menus Available</h3>
 <p>The Azubi Restaurant provides both <em>local</em> and <em>continental dishes.</em> Some of which include:</p>
-<ul>
+<ul class="b">
 	<li>Jollof with Chicken &amp Sausage</li>
 	<li>Apapransa</li>
 	<li>Burger with Fries</li>
@@ -64,33 +72,36 @@ local and continental dishes. It's headquarters is in Bielefeld in Germany.</p>
 form below </p>
 
  <form>
- <label>Name
+ <label> <em>Name</em>
   <input type="text" placeholder="Enter your name here...">
 </label>
 <br>
-  <label>Email
+  <label><em>Email</em>
   <input type="email" placeholder="Enter your email here...">
   </label>
   <br>
   <label>Gender:</label>
   <input type="radio" name="gender" value="male"> Male
-  <input type="radio" name="gender" value="female"> Female<br>
-   Message
+  <input type="radio" name="gender" value="female"> Female
+  <br>
+   <em>Message</em>
    <br>
   <textarea rows="3" placeholder="Type your message here">
   </textarea>
   <br>
- <input type = "submit" value = "submit" /> <br>
+ <input type = "submit" value = "Submit"/> <br>
   </form>
 
 <div>
 <h3>Give us a rating (0 to 5)</h3>
- <input type="range"  value="2" min="0" max="5">
+ <input type="range"  value="2" min="0" max="5" class="rate">
 </div>
-
-<h3>A Message From The C.E.O</h3>
 <br>
-<p>The C.E.O. in an interview was asked for his motivation in bringing up the restuarant.
+
+<div class="message">
+<h3 class="ceo">A Message From The C.E.O</h3>
+<br>
+<p class="interview">The C.E.O. in an interview was asked for his motivation in bringing up the restuarant.
 	This is what he said:
 
 	<blockquote>
@@ -101,6 +112,7 @@ form below </p>
            <p><em>-Honourable Nana Yaw Oduro</em></p>
 	</blockquote>
 </p>
+</div>
 <hr>
 <footer>
 	&copy Azubi Restaurant - 2020.
