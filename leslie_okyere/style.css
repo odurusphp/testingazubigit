@@ -154,8 +154,10 @@ textarea::placeholder {
     padding: 10px;
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:active {
     border: none;
+    border: 1px solid navy;
 }
 
 .form-group__block {
