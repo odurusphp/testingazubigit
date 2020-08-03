@@ -1,0 +1,222 @@
+/* Leslie Joe Sharp */
+
+/* Import downloaded font */
+@font-face {
+    font-family: Azubi Restaurant;
+    src: url(hotpizza.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: rgba(0, 0, 128, 0.034);
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 1px 3px 20px 5px rgba(11, 11, 136, 0.13);
+}
+
+.header {
+    margin: 14px 0;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.main-title {
+    font-family: Azubi Restaurant;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.second-title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.header p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+}
+
+.container {
+    width: 100%;
+}
+
+.image-title {
+    margin-bottom: 10px;
+}
+
+.section-flex {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+
+img {
+    border-radius: 30px 0 30px 0;
+    box-shadow: 1px 3px 20px 5px rgba(11, 11, 136, 0.13);
+}
+
+.figure {
+    margin-right: 30px;
+}
+
+.caption {
+    font-size: 2.4;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.branches p {
+    font-size: 1.25em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+dl dt {
+    font-size: 1.3em;
+    font-weight: bolder;
+    margin: 10px 0 6px;
+}
+
+dl dd {
+    font-size: 1.25em;
+    font-weight: lighter;
+}
+
+dd::before {
+    content: " -- ";
+}
+
+.section-menu {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.section-menu p em {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section-menu ul {
+    list-style: none;
+    font-size: 1.25em;
+    line-height: 1.3em;
+}
+
+.section-menu ul li::before {
+    content: " -- ";
+}
+
+.section-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto 1px auto;
+    grid-column-gap: 20px;
+}
+
+.vertical {
+    background: black;
+    width: 1px;
+    height: 96%;
+}
+
+label {
+    font-size: 1.25em;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+    width: 100%;
+    font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(100, 100, 100);
+}
+
+.form-input {
+    font-size: 1.3em;
+    border: 1px solid navy;
+    padding: 10px;
+}
+
+.form-input:focus {
+    border: none;
+}
+
+.form-group__block {
+    margin: 10px 0 15px;
+}
+
+.form-group__block label, 
+.form-group__block input,
+.form-group__rating label,
+.form-group__rating input {
+    display: block;
+} 
+
+.form-group__inline {
+    margin-bottom: 15px;
+}
+
+.form-group__inline label, 
+.form-group__inline input {
+    display: inline;
+}
+
+label[for="gender"] {
+    display: block;
+}
+
+label[for="male"] {
+    margin-right: 20px;
+}
+
+blockquote p {
+    font-style: italic;
+    padding: 10px 20px;
+}
+
+.cite {
+    float: right;
+}
+
+.form-group__rating {
+    margin: 15px 0;
+}
+
+.button {
+    background: rgb(4, 4, 255);
+    color: aliceblue;
+    font-size: 1.3em;
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+hr {
+    color: navy;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
