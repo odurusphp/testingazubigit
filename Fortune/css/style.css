@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -29,15 +33,27 @@ Header styles
   color: #fff;
 }
 
-.aboutOne {
+.about-main {
   display: flex;
 }
 
-.about {
+.about-header {
+  text-align: center;
+}
+
+.about-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.about-fig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .main-container {
   border-radius: 2px;
   padding: 12px;
@@ -76,8 +92,8 @@ h1 {
 img {
   display: block;
   border: 0;
-  width: auto;
-  height: auto;
+  width: 80%;
+  height: 80%;
 }
 
 label {
@@ -85,6 +101,11 @@ label {
   display: inline-block;
 }
 
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 input [type="text"],
 select,
 textarea {
@@ -93,7 +114,7 @@ textarea {
   margin: 0;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
   margin: 8px 0;
   font-family: "Source Sans Pro", "Helvetica", Arial, sans-serif;
