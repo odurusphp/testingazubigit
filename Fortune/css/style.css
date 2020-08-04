@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
   background-color: hsl(0, 0%, 95%);
+  padding: 0.1em;
+  font-family: "Source Sans Pro", "Helvetica", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 /*--------------------------------------------------------------
@@ -63,12 +67,11 @@ Header styles
 
 .main-container {
   border-radius: 2px;
-  padding: 12px;
 }
 
 .branches-header {
   padding: 1em 0;
-  background-color: #002254;
+  background-color: #b51c35;
   text-align: center;
   border: "0.5rem solid pink";
   text-decoration: none;
@@ -82,12 +85,34 @@ Header styles
 
 dl {
   display: flex;
+  flex-wrap: wrap;
+  margin: 3em auto 2em;
+  padding: 0;
+  justify-content: center;
 }
 
-.branches {
-  border: 2px grey solid;
+.country h3 {
+  text-align: center;
 }
 
+dd a {
+  text-decoration: none;
+  line-height: 1.6em;
+}
+
+dd a:hover {
+  color: #002254;
+}
+dd a:active {
+  color: green;
+}
+
+.menus::before {
+  display: block;
+  height: 4em;
+  content: "";
+  background: #002254 url("../images/square_bg.svg") repeat;
+}
 aside,
 figcaption,
 figure,
@@ -110,7 +135,11 @@ strong {
 }
 
 p {
-  margin-bottom: 1.5em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 h1 {
