@@ -54,9 +54,38 @@ Header styles
   text-align: center;
 }
 
+.about-fig img {
+  display: block;
+  border: 0;
+  width: 80%;
+  height: 80%;
+}
+
 .main-container {
   border-radius: 2px;
   padding: 12px;
+}
+
+.branches-header {
+  padding: 1em 0;
+  background-color: #002254;
+  text-align: center;
+  border: "0.5rem solid pink";
+  text-decoration: none;
+  color: #fff;
+}
+
+.branches img {
+  width: 400px;
+  height: 300px;
+}
+
+dl {
+  display: flex;
+}
+
+.branches {
+  border: 2px grey solid;
 }
 
 aside,
@@ -87,13 +116,6 @@ p {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-img {
-  display: block;
-  border: 0;
-  width: 80%;
-  height: 80%;
 }
 
 label {
