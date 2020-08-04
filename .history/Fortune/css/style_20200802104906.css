@@ -1,0 +1,10 @@
+body {
+  background-color: aquamarine;
+  box-sizing: border-box;
+}
+
+.main-container {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  padding: 12px;
+}
