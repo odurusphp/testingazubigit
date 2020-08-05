@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.main {
+	background-color: #EBC1B5;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.Header {
+	color: #EBC1B5;
+	background-color: #000;
+	font-family: "Comic Sans MS", cursive;
+}
+.Container {
+	height: auto;
+	width: 80%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.Image {
+	
+}
+.Branches {
+	padding-left: 9%;
+	
+}
+.contentbox {
+	margin: 1%;
+	padding: 1%;
+	float: left;
+}
+.message {
+	color: #EBC1B5;
+	background-color: #000;
+	text-align: left;
+}
