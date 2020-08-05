@@ -61,7 +61,7 @@ body {
     color: white;
     text-align: center;
     font-size: 1em;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 /* .item {

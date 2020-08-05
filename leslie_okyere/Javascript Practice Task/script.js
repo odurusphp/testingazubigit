@@ -1,9 +1,7 @@
 let winCount = 0;
 let failCount = 0;
-const WIN_ELEMENT = document.getElementById('win');
-const FAIL_ELEMENT = document.getElementById('fail');
 
-/* Randomize items according to paramter - count - passed */
+// Randomize items according to paramter - count - passed 
 function randomizeItems(count) {
     if (!isNaN(count)) {
         let lists = [];
@@ -14,41 +12,26 @@ function randomizeItems(count) {
     } 
 }
 
-/* 
-    When a user clicks on a box, the user will be notified either Win or Fail
-*/
+// When a user clicks on a box, the user will be notified either Win or Fail
 function onBox(e) {
-    // console.log(e);
-    // console.log(e.target);
     const GET_ID = e.target.id;
     const GET_ITEM_ELEMENT = document.getElementById(`${GET_ID}`);
-    const IS_CLICKED = GET_ITEM_ELEMENT.classList.contains("item-bg__win") || GET_ITEM_ELEMENT.classList.contains("item-bg__fail");
-    // console.log(IS_CLICKED);
+    const IS_CLICKED = GET_ITEM_ELEMENT.classList.contains("item-bg__win")
+        || GET_ITEM_ELEMENT.classList.contains("item-bg__fail");
     if (IS_CLICKED) {
         alert("This box has been clicked! Please click on any blue box instead");
         return;
     }
     
     const SPLIT__ITEM_ID = GET_ID.split("-")[1];
-    if (SPLIT__ITEM_ID % 2 == 0) {
-        GET_ITEM_ELEMENT.classList.remove("item-bg__default");
-        GET_ITEM_ELEMENT.classList.add("item-bg__win");
-        GET_ITEM_ELEMENT.innerHTML = `<p class="text">WIN</p>`;
-        console.log(GET_ITEM_ELEMENT.id);
-        winCount++;
-        alert("WIN");
-        // console.log(`WIN ${winCount}`);
-        WIN_ELEMENT.innerText = `WIN: ${winCount}`;
-    } else {
-        GET_ITEM_ELEMENT.classList.remove("item-bg__default");
-        GET_ITEM_ELEMENT.classList.add("item-bg__fail");
-        GET_ITEM_ELEMENT.innerHTML = `<p class="text">FAIL</p>`;
-        console.log(GET_ITEM_ELEMENT);
-        failCount++;
-        alert("FAIL");
-        // console.log(`FAIL ${failCount}`);
-        FAIL_ELEMENT.innerText = `FAIL: ${failCount}`;
-    }
+    const IS_EVEN = SPLIT__ITEM_ID % 2 == 0;
+    GET_ITEM_ELEMENT.classList.remove("item-bg__default");
+    GET_ITEM_ELEMENT.classList.add(IS_EVEN ? "item-bg__win" : "item-bg__fail");
+    GET_ITEM_ELEMENT.innerHTML = `<p class="text">${IS_EVEN ? "Win" : "Fail"}</p>`;
+    let count = IS_EVEN ? winCount++ : failCount++;
+    const MESSAGE = document.getElementById(IS_EVEN ? 'win' : 'fail');
+    MESSAGE.innerText = IS_EVEN ? `WIN: ${winCount}` : `FAIL: ${failCount}`;
+    alert(IS_EVEN ? "WIN" : "FAIL");
 }
 
 // Start Game
