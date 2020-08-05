@@ -70,12 +70,13 @@ Header styles
 }
 
 .branches-header {
-  padding: 1em 0;
+  padding: 0.5em 0.5em;
   background-color: #b51c35;
   text-align: center;
   border: "0.5rem solid pink";
   text-decoration: none;
   color: #fff;
+  font-size: 24px;
 }
 
 .branches img {
@@ -98,6 +99,7 @@ dl {
 dd a {
   text-decoration: none;
   line-height: 1.6em;
+  color: #000;
 }
 
 dd a:hover {
@@ -113,13 +115,50 @@ dd a:active {
   content: "";
   background: #002254 url("../images/square_bg.svg") repeat;
 }
-aside,
+
+.menus h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.menus img {
+  width: 400px;
+  height: 300px;
+}
+
+.menu-img a {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3em auto 2em;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+}
+
+.contact-us {
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-us-header {
+  background-color: #b51c35;
+  text-align: center;
+  color: #fff;
+  padding: 1em 0;
+}
+.contact-us aside,
 figcaption,
 figure,
 footer,
 header,
 main,
-nav,
 section {
   display: block;
 }
@@ -147,50 +186,6 @@ h1 {
   margin: 0.67em 0;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-.contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-input [type="text"],
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: vertical;
-  margin: 8px 0;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: left;
-}
-
-select {
-  text-transform: none;
-}
-
-textarea {
-  overflow: auto;
-}
-
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -200,11 +195,27 @@ input {
   line-height: normal;
 }
 
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
 blockquote {
   margin: 0 1.5em;
+}
+
+.footer {
+  padding: 3em 3em 0;
+  background: hsl(0, 0%, 10%);
+  color: #fffced;
+}
+.ceomessage {
+  background-color: hsl(0, 0%, 10%);
+  color: #fffced;
+}
+
+.footer-link {
+  background-color: #b51c35;
+  text-align: center;
+  color: #fff;
+  padding: 1em 0;
+}
+
+.footer-link a {
+  text-decoration: none;
 }
