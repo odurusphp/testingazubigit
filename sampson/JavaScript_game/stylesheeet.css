@@ -1,0 +1,30 @@
+.grid {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;    
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;     
+}
+
+.failed {
+ background-color: red;
+ }
+ 
+ .winner {
+ background-color: green;
+ }
+
+.body{
+    margin-left: 400px;
+    margin-top: 50px;    
+}
+
+.head1 {
+    margin-left: 60px;
+    font-family: Arial black;
+}
