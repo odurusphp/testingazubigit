@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let width = 10;
     let failAmount = 20;
     let squares = [];
+    let numberOfWins =0;
+    let numberOfFails = 0;
 
     //Create Board
     function createBoard() {
@@ -24,13 +26,14 @@ document.addEventListener("DOMContentLoaded", () => {
             square.addEventListener("click", () => {
                 const result = document.getElementById("result");
                 if (document.getElementById(i).classList.contains("fail")) {
-                    result.innerHTML = "Failed";
+                    numberOfFails = numberOfFails +01;
                     document.getElementById(i).innerHTML = "*";
                     document.getElementById(i).classList.add("failed");
                 } else {
-                    result.innerHTML = "Win";
+                   numberOfWins = numberOfWins + 1;                  
                     document.getElementById(i).classList.add("winner");
                 }
+                result.innerHTML = `Wins=${numberOfWins} , Fails=${numberOfFails}`;
             });
         }
     }
