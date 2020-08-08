@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Jemima Bar Chart</title>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+    <script type="text/javascript">
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        window.chartColor = {
+        blue: 'rgb(54, 162, 235)',
+        };
+
+        window.randomScalingFactor = function() {
+        return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.random() * 100;};
+
+        let barChart = new Chart(myChart, {
+            type: 'bar', //bar,horizontalBar,pie,line,doughnut,radar,polarArea
+            data : {
+                labels: [
+                    'January', 'February', 'March',
+                    'April', 'May', 'June', 'July', 'August',
+                    'September', 'October', 'November', 'December'
+                ],
+                borderColor: window.chartColor.blue,
+                backgroundColor: window.chartColor.blue,
+                fill: false,
+                datasets : [{
+                    label: 'monthlySales',
+                    data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor()
+                    ]
+                }]
+            },
+            options: {}
+        })
+    </script>
+</body>
+</html>
