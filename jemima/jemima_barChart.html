@@ -14,9 +14,10 @@
     <script type="text/javascript">
         let myChart = document.getElementById('myChart').getContext('2d');
 
-        window.chartColor = {
-        blue: 'rgb(54, 162, 235)',
-        };
+        //Global options
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
 
         window.randomScalingFactor = function() {
         return (Math.random() > 0.5 ? 1.0 : -1.0) * Math.random() * 100;};
@@ -29,9 +30,6 @@
                     'April', 'May', 'June', 'July', 'August',
                     'September', 'October', 'November', 'December'
                 ],
-                borderColor: window.chartColor.blue,
-                backgroundColor: window.chartColor.blue,
-                fill: false,
                 datasets : [{
                     label: 'monthlySales',
                     data: [
@@ -47,10 +45,48 @@
                     randomScalingFactor(),
                     randomScalingFactor(),
                     randomScalingFactor()
-                    ]
+                    ],
+                    backgroundColor: [
+                        'rgba(255, 99,132, 0.7)',
+                        'rgba(54,162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 99,132, 0.7)',
+                        'rgba(54,162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 99,132, 0.7)',
+                        'rgba(54,162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7',
+                        'rgba(75, 192, 192, 0.7)',
+                    ],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 1,
+                    hoverBorderColor: '#000'
                 }]
             },
-            options: {}
+            options: {
+                title: {
+                    display: true,
+                    text: 'Monthly Sales Report',
+                    fontSize: 25,
+                },
+                legend: {
+                    position: 'right',
+                    labels: {
+                        fontColor: '#000'
+                    }
+                },
+                layout: {
+                    padding:{
+                        left: 40,
+                        right: 0,
+                        bottom: 0,
+                        top: 0
+                    }
+                }
+            }
         })
     </script>
 </body>
