@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
       { month: 'December', sales: 0, percentile: 0 },
     ];
   
-    //Generating random sales values between 100 and 500 for each month
+   
     monthlySales.forEach((element) => {
       element.sales = Math.floor(Math.random() * (300 - 100) + 100);
     });
-    //Evaluating the total sum of sales in the year
+   
     var totalSales = monthlySales.reduce((x, element) => x + element.sales, 0);
-    //Generating the percentile sales value for each month
+    
     monthlySales.map((element) => {
       element.percentile = ((element.sales / totalSales) * 100).toFixed(2);
     });
   
-    //Create bar chart using sales values
+    //Bar chart 
     function displayBarChartValues() {
-      //Displaying the individual sales bars for each month
+      //Individual sales bars for each month
       monthlySales.forEach((element) => {
         const valueBar = document.createElement('div');
         valueBar.setAttribute('id', element.month);
@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     displayBarChartValues();
   
-    //Create bar chart using percentile values
+    //Percentile bar chart 
     function displayBarChartPercentiles() {
-      //Displaying the individual sales bars for each month
+      
       monthlySales.forEach((element) => {
         const valueBar = document.createElement('div');
         valueBar.setAttribute('id', element.month);
