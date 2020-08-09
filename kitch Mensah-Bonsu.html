@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Azubi restourant
+</title>
+
+<body>
+    <u><h1>The Azubi Restaurant</h1></u>
+    <h2>About the Restaurant</h2>
+    <p>
+        The Azubi Restaurant is a German-based restaurant which provides it's customers with both local and continental dishes. It's headquarters is in Bielefeld in Germany.
+    </p>
+    <p>
+        The image below is an interior view of the restaurant with a caption.
+    </p>
+        <!--USE OF A RELATIVE PATH WILL BE BETTER FOR THE SOURCE FILE. THIS ENSURES THAT WHEN WORKING WITH
+        A TEAM IT IS STILL POSSIBLE FOR ALL TEAM MEMBERS TO SEE THE FILE. WHAT HAPPENS HERE IS THAT YOU REFERENCED
+        YOUR USERS FOLDER AND DESKTOP BUT FOR MY END I USE A LINUX SYSTEM SO THE FILE PATH WILL BE SKEWED.-->
+        <!--ALSO DO WELL TO ADD THE UNIT OF MEASUREMENT FOR ALL MEASUREMENTS IN THIS CASE THE WIDTH AND HEIGHT-->
+    <figure>
+        <img src="C:\Users\mensa\Desktop\testingazubigit\Kitch_restaurant.jpg" width="480" height="270" />
+        <figcaption>
+            The Azubi Restaurant - Bielefeld
+        </figcaption>
+    </figure>
+
+    <h2>Branches Worldwide</h2>
+    <div>You will find the various branches groupd under the countries</div>
+
+    <dl>
+        <dt>Ghana</dt>
+        <dd>Adenta - Accra</dd>
+        <dd>Tishegu - Tamale</dd>
+        <dd>Santasi - Kumasi</dd>
+        <dt>Ethiopia</dt>
+        <dd>Sodo</dd>
+        <dd>Harar</dd>
+        <dt>Afghanistan</dt>
+        <dd>Herat</dd>
+        <dd>Khost</dd>
+    </dl>
+
+    <h2>Menus Available</h2>
+
+    <p>The Azubi restaurant provide both <i>local</i> and <i>continental</i> dishes. Some of which include:</p>
+    <ul>
+        <li>Jollof with Chicken and Sausages</li>
+        <li>Apapransa</li>
+        <li>Burger with Fries</li>
+        <li>Banku with Tilapia</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+
+    <p>Please, feel free to send us your feedback, recommendations or concerns by filling-in the form below</p>
+    <!--GOOD JOB WITH THE ATTRIBUTE 'for' WITHIN THE LABELS-->
+    <form action="/feedback.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name here..."><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here..."><br />
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <label for="message">Message</label><br />
+        <textarea rows="5" cols="25" name="message" id="message" placeholder="Type your message here"></textarea><br />
+        <button type="submit" name="submit">Submit</button>
+        <h2>Give us a rating (0 to 5)</h2>
+        <input type="range" name="rating" id="rating" min="0" max="5">
+    </form>
+
+    <!-- CEO Message Quote -->
+    <h2>A Message From The C.E.O</h2>
+    <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:</p>
+    <blockquote>
+        "There is no food difficult for you to eat. It is just a matter of psyching yourself. Free your mind and the food will settle in your belly because the sweetness of the pudding is in the eating." <br /><br />
+        <cite> - Honourable Nana Yaw Oduro</cite>
+    </blockquote>
+    <hr />
+
+    <footer>
+        <p>
+            &copy; Azubi Restaurant - 2020. Website:
+            <a href="https://github.com/odurusphp/testingazubigit/">
+                https://github.com/odurusphp/testingazubigit/
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

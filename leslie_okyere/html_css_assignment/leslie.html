@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description"
+            content="Azubi Restaurant is a German-based restaurant which provides its customers with both local and continental dishes. It's headquarters is in Bielefeld in Germany.">
+        <title>The Azubi Restaurant | About</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="main-title">
+                    THE AZUBI RESTAURANT
+                </h1>
+                <h2 class="second-title">About The Restaurant</h2>
+                <p>Azubi Restaurant is a German-based restaurant which provides its customers with both local and continental dishes. Its headquarters is in Bielefeld in Germany.</p>
+            </header>
+            <main class="container">
+                <!-- Azubi Restaurant Image -->
+                <h2 class="image-title">The image below is an interior view of the restaurant with a caption.</h2>
+                <section class="section-flex">
+                    <div class="figure">
+                        <figure>
+                            <img src="leslie_restaurant.jpg" alt="leslie_restaurant" width="560" height="315"
+                                srcset="leslie_restaurant.jpg 2x" aria-label="azubi restaurant picture" aria-hidden="true" />
+                            <figcaption>
+                                <p class="caption">The Azubi Restaurant - Bielefeld</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Azubi Restaurant Branches -->
+                    <div class="branches">
+                        <h2>Branches Worldwide</h2>
+                        <p>You will find all various branches grouped under the countries.</p>
+                        <dl>
+                            <dt>Ghana</dt>
+                            <dd>Adenta - Accra</dd>
+                            <dd>Tishegu - Tamale</dd>
+                            <dd>Santasi - Kumasi</dd>
+                            <dt>Ethiopia</dt>
+                            <dd>Sodo</dd>
+                            <dd>Harar</dd>
+                            <dt>Afghanistan</dt>
+                            <dd>Herat</dd>
+                            <dd>Khost</dd>
+                        </dl>
+                    </div>
+                </section>
+
+                <!-- Restaurant Menus -->
+                <section class="section-menu">
+                    <h2>Menus Available</h2>
+                    <p>The Azubi Restaurant provides both <em>local</em> and <em>continental</em> dishes. Some of which include:</p>
+                    <ul>
+                        <li>Jollof with Chicken & Sauage</li>
+                        <li>Apapransa</li>
+                        <li>Burger with Fries</li>
+                        <li>Banku with Tilapia</li>
+                    </ul>
+                </section>
+
+                <!-- Contact Us-->
+                <section class="section-grid">
+                    <div class="contact">
+                        <h2>Contact Us</h2>
+                        <p>Please, feel free to send us your feedback, recommendations or concerns by filling in the form below</p>
+                        <div class="form-block">
+                            <form action="/leslie.html" method="post">
+                                <div class="form-group__block">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-input" name="name" id="name" placeholder="Enter your name here...">
+                                </div>
+                                <div class="form-group__block">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-input" name="email" id="email" placeholder="Enter your email here...">
+                                </div>
+                                <div class="form-group__inline">
+                                    <label for="gender">Gender:</label>
+                                    <input type="radio" class="form-input" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" class="form-input" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                                <div>
+                                    <label for="message">Message:</label><br/>
+                                    <textarea class="form-input" rows="5" cols="25" name="message" id="message">
+                                    </textarea>
+                                </div>
+                                <div class="form-group__rating">
+                                    <label for="rating">Give us a rating (0 to 5)</label>
+                                    <input type="range" name="rating" id="rating" min="0" max="5" value="2">
+                                </div>
+                                <button type="submit" class="button" name="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="vertical"></div>
+                    <!-- CEO Message Quote -->
+                    <div class="quote">
+                        <h2>A Message From The C.E.O</h2>
+                        <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This is what he said:
+                        </p>
+                        <blockquote>
+                            <p>"There is no food difficult for you to eat. It is just a matter of psyching yourself. Free your mind and the food will settle in your belly because the sweetness of the pudding is in the eating."
+                            </p>
+                            <p class="cite">- Honourable Nana Yaw Oduro</p>
+                        </blockquote>
+                    </div>
+                </section>
+            </main>
+            <hr />
+
+            <footer class="footer">
+                <p>
+                    &copy; Azubi Restaurant - 2020. Website:
+                    <a href="https://github.com/odurusphp/testingazubigit/">
+                        https://github.com/odurusphp/testingazubigit/
+                    </a>
+                </p>
+            </footer>
+        </div>
+    </body>
+
+</html>

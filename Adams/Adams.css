@@ -1,0 +1,81 @@
+.main_section h1 {
+    color: darkgreen;
+    text-align: center;
+    font-weight: 900;
+    margin-left: 0px;
+
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+p {
+    font-weight: normal;
+    font-size: large;
+}
+
+#image {
+    float: right;
+
+}
+
+.branches {
+    clear: left;
+}
+
+.image-text {
+    text-align: right;
+    margin-right: 35px;
+    font: normal;
+    font-family: cursive;
+    
+}
+
+.country {
+    color: darkgreen;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.location {
+    font-size: 18px;
+}
+
+.main_section .branches .menu h2 {
+     font-family: cursive;
+}
+.grid-container{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: auto, auto, auto, auto;
+    float:left;
+    width:50%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.grid-container .grid-item {
+    float: left;
+    padding: 2px;
+    margin-bottom: 5px;
+    background-color: #FFC880;
+    color: orange;
+}
+/*Creat responsiveness in images*/
+@media screen and (max-width: 800px) {
+    .grid-container{
+        width: 100%;
+        padding:0;
+    }
+}
+img{
+    border: white;
+    border-radius: 10px;
+}
+.CEO-message {
+    float:left;
+    text-align: left;
+    padding: 2px;
+} 
