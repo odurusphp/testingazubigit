@@ -1,0 +1,328 @@
+/*Stylesheet*/
+
+.header{
+	border-bottom: 5px solid #37474F;
+	color: white;
+	margin-bottom: 1.5rem;
+	padding: 1rem 0;
+}
+h4{
+	font-weight: bolder;
+}
+.canvas {
+	border: 4px solid black;
+	position: relative;
+	margin: auto;
+	display: block;
+  /*optional background or border*/
+	margin-top: 4%;
+	width: 650px;
+	height: 450px;
+	background: none;
+}
+
+
+.bar {
+  position: absolute;
+  top: 1%;
+  left: 98%;
+  width: 1%;
+  height: 100%;
+  background: black;
+}
+
+.bar-10 {
+  position: absolute;
+  top: 90%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: red;
+}
+
+.bar-20 {
+  position: absolute;
+  top: 80%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: pink;
+}
+
+
+
+.bar-30 {
+  position: absolute;
+  top: 70%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: yellow;
+}
+
+.bar-40 {
+  position: absolute;
+  top: 60%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: yellow;
+}
+
+.bar-50 {
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: yellow;
+}
+
+.bar-60 {
+  position: absolute;
+  top: 40%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: yellow;
+}
+
+.bar-70 {
+  position: absolute;
+  top: 30%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: blue;
+}
+
+.bar-80 {
+  position: absolute;
+  top: 20%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: green;
+}
+
+.bar-90 {
+  position: absolute;
+  top: 10%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: green;
+}
+
+.bar-100 {
+  position: absolute;
+  top: 0%;
+  left: -25%;
+  width: 160%;
+  height: 1%;
+  background: green;
+}
+
+.graph-1 {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  width: 6%;
+  height: 30%;
+  background: yellow;
+  animation: graph-1 3s 1;
+}
+
+.graph-2 {
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  width: 6%;
+  height: 30%;
+  background: yellow;
+  animation: graph-1 3s 1;
+}
+
+.graph-3 {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  width: 6%;
+  height: 50%;
+  background: black;
+  animation: graph-2 5s 1;
+}
+
+.graph-4 {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+  width: 6%;
+  height: 80%;
+  background: green;
+  animation: graph-3 8s 1;
+}
+
+.graph-5 {
+  position: absolute;
+  top: 0%;
+  left: 32%;
+  width: 6%;
+  height: 100%;
+  background: green;
+  animation: graph-4 10s 1;
+}
+
+.graph-6 {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  width: 6%;
+  height: 35%;
+  background: yellow;
+  animation: graph-5 2s 1;
+}
+.graph-7 {
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  width: 6%;
+  height: 30%;
+  background: yellow;
+  animation: graph-5 2s 1;
+}
+.graph-8 {
+  position: absolute;
+  top: 80%;
+  left: 56%;
+  width: 6%;
+  height: 20%;
+  background: red;
+  animation: graph-5 2s 1;
+}
+.graph-9 {
+  position: absolute;
+  top: 70%;
+  left: 64%;
+  width: 6%;
+  height: 30%;
+  background: yellow;
+  animation: graph-5 2s 1;
+}
+.graph-10 {
+  position: absolute;
+  top: 80%;
+  left: 72%;
+  width: 6%;
+  height: 20%;
+  background: red;
+  animation: graph-5 2s 1;
+}
+.graph-11 {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  width: 6%;
+  height: 20%;
+  background: red;
+  animation: graph-5 2s 1;
+}
+.graph-12 {
+  position: absolute;
+  top: 80%;
+  left: 88%;
+  width: 6%;
+  height: 20%;
+  background: red;
+  animation: graph-5 2s 1;
+}
+@keyframes graph-1 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 30%;
+  }
+}
+@keyframes graph-2 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 50%;
+  }
+}
+@keyframes graph-3 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 80%;
+  }
+}
+@keyframes graph-4 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes graph-5 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes graph-6 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes graph-7 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes graph-8 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes graph-9 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@keyframes graph-10 {
+  0% {
+    height: 0%;
+    top: 100%;
+  }
+  100% {
+    height: 20%;
+  }
+}
