@@ -27,11 +27,11 @@ function onBox(e) {
     const IS_EVEN = SPLIT__ITEM_ID % 2 == 0;
     GET_ITEM_ELEMENT.classList.remove("item-bg__default");
     GET_ITEM_ELEMENT.classList.add(IS_EVEN ? "item-bg__win" : "item-bg__fail");
-    GET_ITEM_ELEMENT.innerHTML = `<p class="text">${IS_EVEN ? "Win" : "Fail"}</p>`;
+    GET_ITEM_ELEMENT.innerHTML = `<p class="text">${IS_EVEN ? "Success" : "Fail"}</p>`;
     let count = IS_EVEN ? winCount++ : failCount++;
-    const MESSAGE = document.getElementById(IS_EVEN ? 'win' : 'fail');
-    MESSAGE.innerText = IS_EVEN ? `WIN: ${winCount}` : `FAIL: ${failCount}`;
-    alert(IS_EVEN ? "WIN" : "FAIL");
+    const MESSAGE = document.getElementById(IS_EVEN ? 'success' : 'fail');
+    MESSAGE.innerText = IS_EVEN ? `SUCCESS: ${winCount}` : `FAIL: ${failCount}`;
+    alert(IS_EVEN ? "SUCCESS" : "FAIL");
 }
 
 // Start Game

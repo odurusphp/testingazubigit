@@ -46,11 +46,11 @@ body {
 }
 
 .item-bg__default {
-    background: darkblue;
+    background: rgb(8, 8, 8);
 }
 
 .item-bg__win {
-    background: green;
+    background: rgb(250, 250, 250);
 }
 
 .item-bg__fail {
