@@ -26,6 +26,7 @@ body {
     top: 70px;
     right: calc(60%/2);
 }
+
 .items-left > div > p::after {
     content: "------------------------------------------------------------------------------------------------------------";
 }
@@ -42,8 +43,12 @@ body {
 
 .items-left div > p {
     margin: 0;
-    color: white;
+    color: #4E9C26;
     font-size: 0.95em;
+}
+
+.items-left div > p > span {
+    color: white;
 }
 
 .items {
