@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A website for the Azubi Restaurant">
+        <meta name="author" content="Philip Owusu-Afriyie">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Azubi Restaurant</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="sections">
+            <h1 id="title">The Azubi Restaurant</h1>
+        </section> 
+
+        <section class="sections sections-others">
+            <div class="grid-container">
+                <div class="grid-item item-1">
+                    <h1>About Us</h1>
+                </div>
+                <div class="grid-item item-2">
+                    <p>The Azubi Restaurant is a German-based restaurant which provides its customers with both local and 
+                        continental dishes. It's headquaters is in Bielefield in Germany.
+                    </p>
+                    <h2>Branches Worldwide</h2>  
+                    <p>You will find all the variousranches grouped under the countries</p>
+
+                    <div class='parent'>
+                        <div class='child inline-block-child'>
+                            <img src="ghana.jpg" alt="Ghanaian Flag">
+                        </div>
+                        <div class='child inline-block-child'>    
+                            <dl>
+                                <dt>Ghana</dt>
+                                <dd>Adenta - Accra</dd>
+                                <dd>Tishegu - Tamale</dd>
+                                <dd>Santasi - Kumasi</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class='parent'>
+                        <div class='child inline-block-child'>
+                            <img src="ethiopia.jpg" alt="Ethiopian Flag">
+                        </div>
+                        <div class='child inline-block-child'>                                
+                            <dl>
+                                <dt>Ethiopia</dt>
+                                <dd>Sodo</dd>
+                                <dd>Harar</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class='parent'>
+                        <div class='child inline-block-child'>
+                            <img src="afghan.jpg" alt="Afghanistan Flag">
+                        </div>
+                        <div class='child inline-block-child'>    
+                            <dl>
+                                <dt>Afghanistan</dt>
+                                <dd>Herat</dd>
+                                <dd>Khost</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="sections sections-others">
+            <h1>Menu Available</h1>
+            <ul>
+                <li>Jollof with Chicken Sausage</li>
+                <li>Apapransa</li>
+                <li>Burger with Fries</li>
+                <li>Banku with Tilapia</li>
+            </ul>
+
+        </section>
+
+        <section class="sections sections-others">
+            <h1>Contact Us</h1>
+            <p>Please feel free to send us your feedback, recommendations, or concerns by filling in theform below</p>
+            <form>
+                <label for="name">Name</label>
+                <input name="name" id="name" placeholder="Enter your name here" required><br>
+                <label for="email">Email</label>
+                <input name="email" id="email" placeholder="Enter your email here" required><br>
+                <label>Gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"><br>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" placeholder="Type your message here"></textarea><br>
+                <button type="submit" >submit</button>
+            </form>
+            
+            <h2>Give us a rating (0 to 5)</h2>
+            <input type="range" min="0" max="5" value="3">
+            <div id="center">
+                <h2>A Message From The C.E.O</h2>
+                <p>The C.E.O, in an interview was asked for his motivation in bringing up this restaurant. This<br>is what he said:</p>
+                <blockquote>
+                    <q>There is no food difficult for you to eat. It is just a matter of you psyching yourself.<br>
+                        Free your mind and the food will settle in your belly because the sweetness of <br>
+                        the pudding is in the eating.
+                    </q><br>
+                    &mdash;
+                    <cite>Honourable Nana Yaw Oduro</cite>  
+                </blockquote>
+            </div>
+        </section>
+        <footer style="margin-left: 30%;">
+            &copy; Azubi Restaurant - 2020. Website: <a href="https://github.com/odurusphp/testingazubigit/">https://github.com/odurusphp/testingazubigit/</a>
+        </footer>
+    </body>
+</html>
