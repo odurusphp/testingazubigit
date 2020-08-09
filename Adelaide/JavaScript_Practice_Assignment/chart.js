@@ -40,9 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const month = document.createElement('div');
 
       month.style.transform = 'rotate(' + 270 + 'deg)';
-      valuesChart.appendChild(valueBar);
 
-      valueBar.prepend(month);
+      valuesChart.appendChild(valueBar);
+      valueBar.appendChild(month);
+
       month.innerHTML =
         ' ' +
         element.month +
@@ -74,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
       percentilesChart.appendChild(valueBar);
 
       valueBar.appendChild(month);
+
+      month.style.paddingBlockStart = '15px';
       month.innerHTML =
         ' ' +
         element.month +
