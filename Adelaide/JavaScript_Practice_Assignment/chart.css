@@ -1,0 +1,68 @@
+:root {
+  --bar-width: 6.8%;
+}
+
+#title-text {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1.5rem;
+}
+
+#value-cap {
+  padding-top: 18px;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1rem;
+  color: springgreen;
+  text-align: center;
+}
+
+#percentile-cap {
+  padding-top: 38px;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1rem;
+  color: darkorchid;
+  text-align: center;
+}
+
+.chart-box {
+  border: 1px solid darkslategray;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 15%;
+  margin-top: 20px;
+  height: 300px;
+  background-color: #ffa6003d;
+  padding-top: 80px;
+  padding-bottom: 25px;
+  padding-left: 3.5px;
+  align-items: flex-end;
+}
+
+.value-bars {
+  width: var(--bar-width);
+  background-color: springgreen;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding-top: 25px;
+}
+
+.percentile-bars {
+  width: var(--bar-width);
+  background-color: darkorchid;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  padding-top: 25px;
+}
+
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
