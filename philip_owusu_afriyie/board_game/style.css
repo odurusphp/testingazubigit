@@ -1,0 +1,17 @@
+.grid{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4b5d67;
+}
+
+.grid div{
+    height: 40px;
+    width: 40px;
+}
+
+
+.checked{
+    background-color: red;
+}
