@@ -1,0 +1,78 @@
+:root {
+  --bar-width: 6.8%;
+}
+
+#title-text {
+  padding-top: 45px;
+  text-align: center;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1.5rem;
+}
+
+#radio {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+#prompt {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+#value-cap {
+  padding-top: 40px;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1.1rem;
+  color: springgreen;
+  text-align: center;
+}
+
+#percentile-cap {
+  padding-top: 40px;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 1.1rem;
+  color: darkorchid;
+  text-align: center;
+}
+
+.chart-box {
+  border: 1px solid darkslategray;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto 12%;
+  margin-top: 30px;
+  height: 500px;
+  background-color: #ffa6003d;
+  padding-top: 80px;
+  padding-left: 44px;
+  align-items: flex-end;
+}
+
+.value-bars {
+  width: var(--bar-width);
+  background-color: springgreen;
+  padding-bottom: -200px;
+  margin-left: 12px;
+  align-items: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.percentile-bars {
+  width: var(--bar-width);
+  background-color: darkorchid;
+  margin-left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
