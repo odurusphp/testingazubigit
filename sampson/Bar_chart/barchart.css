@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+    background: rgb(128, 109, 0);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.items {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 35px);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: flex-end;
+    padding: 0 40px 0 10px;
+    border-bottom: 2px solid #4E9C26;
+    border-left: 2px solid #4E9C26;
+}
+
+.items-bottom {
+    text-align: center;
+    width: 500px;
+    height: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 35px);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: flex-start;
+    padding: 5px 40px 0 10px;
+}
+
+.items-bottom > div > p {
+    color: white;
+    margin: 0;
+}
+
+.items > div > p {
+    color: white;
+    transform-origin: 70% 100%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    box-shadow: 2px 4px 30px 2px rgba(0, 0, 0, 0.116);
+    padding-left: 30px;
+    padding-bottom: 3px;
+}
+
+.items > .item {
+    height: 50%;
+    background: #1395e0;
+    box-shadow: 2px 4px 30px 2px #9c262652;
+    padding-bottom: 75px;
+}
+
+.month-sale {
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+.month-sale > h3 {
+    color: white;
+    margin: 0;
+}
