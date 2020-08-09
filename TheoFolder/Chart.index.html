@@ -1,0 +1,51 @@
+<!Doctype HTML>
+<html lang = "en-US" dir = "ltr">
+    <head>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1, user-scalable=0">
+        <meta http-equiv="x-ua-compatible" content = "ie=edge">
+        <meta charset = "utf-8">
+        <title> Bar Chart </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+
+    <body>
+
+    <!--chart beginning-->
+        <div class = "chart">
+            <ul class = "monthlySales">
+                <li><span>100%</span></li>
+                <li><span>50%</span></li>
+                <li><span>0%</span></li>
+            </ul>
+            <ul class="bars">
+                <li><div class = "bar" data-percentage = "50"></div> <span>Jan</span></li>
+                <li><div class = "bar" data-percentage = "93"></div> <span>Feb</span></li>
+                <li><div class = "bar" data-percentage = "60"></div> <span>Mar</span></li>
+                <li><div class = "bar" data-percentage = "90"></div> <span>Apr</span></li>
+                <li><div class = "bar" data-percentage = "30"></div> <span>May</span></li>
+                <li><div class = "bar" data-percentage = "80"></div> <span>Jun</span></li>
+                <li><div class = "bar" data-percentage = "25"></div> <span>Jul</span></li>
+                <li><div class = "bar" data-percentage = "45"></div> <span>Aug</span></li>
+                <li><div class = "bar" data-percentage = "55"></div> <span>Sep</span></li>
+                <li><div class = "bar" data-percentage = "78"></div> <span>Oct</span></li>
+                <li><div class = "bar" data-percentage = "62"></div> <span>Nov</span></li>
+                <li><div class = "bar" data-percentage = "84"></div> <span>Dec</span></li>
+            </ul>
+        </div>
+    <!--chart ending-->
+
+        <script type="text/javascript">
+        //Function to draw Bars commensurate of the attributed percentage
+            $(function () {
+             $('.bars li .bar').each(function (key, bar) {
+                var percentage = $(this).data('percentage');
+                $(this).animate({
+                'height': percentage + '%'
+             },1000);
+            });
+        });
+        </script>
+
+    </body>
+</html>
