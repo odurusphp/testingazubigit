@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Generating random sales values between 100 and 500 for each month
   monthlySales.forEach((element) => {
-    element.sales = Math.floor(Math.random() * (500 - 100) + 100);
+    element.sales = Math.floor(Math.random() * (300 - 100) + 100);
   });
   //Evaluating the total sum of sales in the year
   var totalSales = monthlySales.reduce((x, element) => x + element.sales, 0);
@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
       valueBar.style.height = '' + element.sales + 'px';
       const month = document.createElement('div');
 
-      month.style.transform = 'rotate(' + 90 + 'deg)';
+      month.style.transform = 'rotate(' + 270 + 'deg)';
       valuesChart.appendChild(valueBar);
 
-      valueBar.appendChild(month);
+      valueBar.prepend(month);
       month.innerHTML =
-        '' +
+        ' ' +
         element.month +
-        ' : ' +
+        ': ' +
         '<strong>' +
         element.sales +
         'GHS' +
@@ -67,17 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const valueBar = document.createElement('div');
       valueBar.setAttribute('id', element.month);
       valueBar.classList.add('percentile-bars');
-      valueBar.style.height = '' + element.percentile * 5 + '%';
+      valueBar.style.height = '' + element.percentile * 7 + '%';
       const month = document.createElement('div');
 
-      month.style.transform = 'rotate(' + 90 + 'deg)';
+      month.style.transform = 'rotate(' + 310 + 'deg)';
       percentilesChart.appendChild(valueBar);
 
       valueBar.appendChild(month);
       month.innerHTML =
-        '' +
+        ' ' +
         element.month +
-        ' : ' +
+        ': ' +
         '<strong>' +
         element.percentile +
         '%' +
