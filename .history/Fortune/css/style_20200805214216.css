@@ -171,7 +171,7 @@ section {
 
 label {
   padding: 12px 12px 12px 0;
-  display: inline-block;
+  display: block;
 }
 
 input[type="text"],
@@ -197,9 +197,6 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.msg {
-  margin-left: 4%;
-}
 a:active,
 a:hover {
   outline: 0;
@@ -232,9 +229,6 @@ blockquote {
   margin: 0 1.5em;
 }
 
-.rating {
-  text-align: center;
-}
 .footer {
   padding: 3em 3em 0;
   background: hsl(0, 0%, 10%);
@@ -254,5 +248,4 @@ blockquote {
 
 .footer-link a {
   text-decoration: none;
-  color: #f2f2f2;
 }

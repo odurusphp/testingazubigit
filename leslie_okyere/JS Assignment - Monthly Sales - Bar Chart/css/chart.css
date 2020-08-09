@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgba(1, 1, 102, 0.486);
+    position: relative;
+}
+
+.container {
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+    background: rgba(1, 1, 92, 0.952);
+    box-shadow: 2px 4px 30px 2px rgba(1, 1, 61, 0.767);
+    border-radius: 5px;
+    padding: 40px 15px 10px 20px;
+}
+
+.header {
+    color: white;
+    position: absolute;
+    top: 70px;
+    right: calc(60%/2);
+}
+.items-left > div > p::after {
+    content: "------------------------------------------------------------------------------------------------------------";
+}
+
+.items-left {
+    width: 100%;
+    height: 2px;
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-auto-flow: row;
+    grid-gap: 12px;
+    align-items: flex-start;
+}
+
+.items-left div > p {
+    margin: 0;
+    color: white;
+    font-size: 0.95em;
+}
+
+.items {
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(12, 35px);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: flex-end;
+    padding: 0 40px 0 10px;
+    border-bottom: 2px solid #4E9C26;
+    border-left: 2px solid #4E9C26;
+    z-index: 100;
+}
+
+.items-bottom {
+    text-align: center;
+    width: 500px;
+    height: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 35px);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: flex-start;
+    padding: 5px 35px 0 48px;
+}
+
+.items-bottom > div > p {
+    color: white;
+    margin: 0;
+}
+
+.items > div > p {
+    color: white;
+    transform-origin: 70% 100%;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    box-shadow: 2px 4px 30px 2px rgba(0, 0, 0, 0.116);
+}
+
+.items > .item {
+    height: 0%;
+    transition: 700ms linear;
+    background: #4E9C26;
+    box-shadow: 2px 4px 30px 2px #4d9c2652;
+}
+
+.month-sale {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.month-sale > h3 {
+    color: white;
+    margin: 0;
+}

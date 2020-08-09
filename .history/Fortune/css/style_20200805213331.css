@@ -163,12 +163,6 @@ section {
   display: block;
 }
 
-.form-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
@@ -185,20 +179,12 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #002254;
+  background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.msg {
-  margin-left: 4%;
 }
 a:active,
 a:hover {
@@ -228,13 +214,14 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+input {
+  line-height: normal;
+}
+
 blockquote {
   margin: 0 1.5em;
 }
 
-.rating {
-  text-align: center;
-}
 .footer {
   padding: 3em 3em 0;
   background: hsl(0, 0%, 10%);
@@ -254,5 +241,4 @@ blockquote {
 
 .footer-link a {
   text-decoration: none;
-  color: #f2f2f2;
 }

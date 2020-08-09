@@ -255,4 +255,5 @@ blockquote {
 .footer-link a {
   text-decoration: none;
   color: #f2f2f2;
+  border: #ccc solid;
 }

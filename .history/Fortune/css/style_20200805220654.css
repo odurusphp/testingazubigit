@@ -250,6 +250,8 @@ blockquote {
   text-align: center;
   color: #fff;
   padding: 1em 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .footer-link a {
