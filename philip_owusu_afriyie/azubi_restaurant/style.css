@@ -1,0 +1,87 @@
+body{ 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+    line-height: 26.4px; 
+} 
+
+h1{
+    font-size: 3.5em;
+}
+.sections{
+    height:100vh;
+    box-sizing: border-box;
+    padding: 35px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('philip_owusu_afriyie_restaurant.png');
+}
+
+.sections-others{
+    background: #faf4ff;
+}
+
+.sections-others img{
+    height: 200px;
+    width: 300px;
+}
+
+#title{
+    color: #faf4ff;
+    margin-top: 50%;
+    font-size: 7em;
+}
+
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 80px 1fr;
+}
+
+.grid-item{
+    padding: 20px;
+}
+
+.item-1{
+    grid-column-start:1;
+    grid-column-end:4;
+
+
+}
+.item-2{
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+.float-left-child {
+    float: left
+  }
+  
+  
+  .inline-block-child {
+    display: inline-block;
+  }
+  
+  
+  .flex-parent {
+    display: flex;
+  }
+  .flex-child {
+    flex: 1;
+  }
+  
+  
+  .inline-flex-parent {
+    display: inline-flex;
+  }
+  
+  .grid-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+  }
+
+  #center{
+    margin-left: 35%;
+  }
