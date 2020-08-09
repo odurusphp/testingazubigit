@@ -1,0 +1,27 @@
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.January {width: 8%; background-color:darkcyan}
+.February {width: 16.67%; background-color: #2196F3;}
+.March {width:25% ; background-color: yellow}
+.April {width: 33.3%; background-color: brown}
+.May {width: 41.67%;; background-color: black}
+.June {width:50% ;background-color: chocolate}
+.July {width:58.3%; background-color: #f44336;}
+.August {width:66.67%;background-color: #808080;}
+.September {width:75%;background-color:red }
+.October {width: 83.3%;  background-color:fuchsia;}
+.November {width:91.6%; background-color: green}
+.December {width:100%; background-color: indigo}
