@@ -57,7 +57,7 @@ const createbars = ()=>{
         const bar = document.createElement("div")
         bar.classList.add("bar")
         bar.setAttribute('title',monthlySales[i].month +' ' + monthlySales[i].sale + '00.00')
-        bar.setAttribute('style','--bar-value:' + monthlySales[i].sale +'%')
+        bar.setAttribute('style','--length:' + monthlySales[i].sale +'%')
         bar.setAttribute('data-name', monthlySales[i].month )
         grid.appendChild(bar)
     }
