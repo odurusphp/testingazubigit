@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+#container{
+    display: grid;
+    display: block;
+
+    text-align: center;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 5vh 20vh 20vh 10vh 20vh 20vh 10vh;
+    grid-template-areas: "heading_logo heading_logo heading_logo "
+                        "... intro  ..."
+                        "...  branches ..."
+                        "...  menu ..."
+                        "...  contact_us ..."
+                        "...  feedback ..."
+                        "...  ceo_message ..."
+                        "... ... ...";
+}
+
+#heading_logo{
+    grid-area: heading_logo;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+/*    background-color: darkgoldenrod;*/
+    width: 100%;
+     
+}
+#intro{
+    grid-area: intro;
+}
+#branches{
+    grid-area: branches;
+   /* display: grid;
+    grid-template-columns: 5% 25% 5% 30% 5% 25% 5%;
+    grid-template-rows: 100%;
+    grid-template-areas: "... ghana ... ethiopia ... afghanistan ...";
+    */
+}
+/*
+#ghana{
+    grid-area:ghana;
+}
+
+#ethiopia{
+    grid-area:ethiopia;
+}
+
+#afghanistan{
+    grid-area:afghanistan;
+}*/
+#menu{
+    grid-area:menu;
+}
+#contact_us{
+    grid-area:contact_us;
+}
+#feedback{
+    grid-area:feedback;
+}
+#ceo_message{
+    grid-area: ceo_message;
+}
+#azubi_footer{
+     text-align: center;
+    background-color: darkgoldenrod;
+   
+}
