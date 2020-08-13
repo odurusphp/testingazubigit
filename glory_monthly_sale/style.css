@@ -1,6 +1,23 @@
-html, body, #container {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+#container{
+  position: relative;
+  width: auto;
+  height: 500px;
+}
+
+.bar{
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: aqua;
+  float: left;
+  bottom: 0;
+} 
+
+.months{
+  position: absolute;
+  width: 70px;
+  height: 0;
+  float: left;
+  bottom: 0;
+} 

@@ -1,43 +1,36 @@
+const container = document.querySelector("#container");
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+
+let position = 250;
+
+for (let i = 0;i < 12;i++){
+    const bar = document.createElement("div");
+    const month = document.createElement("div");
+    const sales = Math.random() * 2000;
+    bar.className = "bar";
+    bar.innerHTML = sales.toFixed(0);
+    bar.style.height = (sales/5) + "px";
+    bar.style.left = position + "px";
 
 
-anychart.onDocumentReady(function() {
+    month.innerHTML = months[i];
+    month.className = "months";
+    month.style.left = position + "px";
+    position += 80;
+    container.appendChild(bar);
+    container.appendChild(month);
 
-
-    //set function for random numbers
-    function randomNumber(min, max) {
-        return Math.random() * (max - min) + min;
-    }
-
-
-    // set the data
-    var monthlySales = {
-    header: ["Month", "Sales"],
-    rows: [
-        ["January",randomNumber(10000,500000)],
-        ["February", randomNumber(10000,500000)],
-        ["March", randomNumber(10000,500000)],
-        ["April", randomNumber(10000,500000)],
-        ["May", randomNumber(10000,500000)],
-        ["June", randomNumber(10000,500000)],
-        ["July", randomNumber(10000,500000)],
-        ["August", randomNumber(10000,500000)],
-        ["October", randomNumber(10000,500000)],
-        ["September", randomNumber(10000,500000)],
-        ["November", randomNumber(10000,500000)],
-        ["December", randomNumber(10000,500000)]
-    ]};
-
-
-    // create the chart
-    var chart = anychart.column();
-
-    // add data
-    chart.data(monthlySales);
-
-    // set the chart title
-    chart.title("Monthly Sales results for 2020 ");
-
-    // draw
-    chart.container("container");
-    chart.draw();
-    });
+}
