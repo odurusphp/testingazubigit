@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: grey;
+}
+
+.chart {
+    width: 1500px;
+    height: 750px;
+    display: block;
+}
+
+.monthlySales {
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 750px;
+    display: inline-block;
+    float: left;
+}
+
+.monthlySales li {
+    list-style: none;
+    height: 350px;
+    position: relative;
+    bottom: 300px;
+}
+
+.monthlySales span {
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.bars {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background: #555;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 1200px;
+    height: 750px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+}
+
+.bars li {
+    display: table-cell;
+    width: 100px;
+    height: 750px;
+    position: relative;
+}
+
+.bars span {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+
+.bars .bar {
+    display: block;
+    background: turquoise;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(23, 292, 235, 0.5);
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+
+.bars .bar:hover {
+    background: #55efc4;
+    box-shadow: 0 0 50px 0 rgba(85, 240, 200, 0.5);
+    cursor: pointer;
+}
+
+.bars .bar:before {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+}
